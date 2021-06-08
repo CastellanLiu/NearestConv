@@ -5,7 +5,7 @@ class NearestConv(torch.nn.ConvTranspose2d):
         assert conv3x3.kernel_size == (3, 3)
         assert conv3x3.stride == (1, 1)
         assert conv3x3.padding == (1, 1)
-        super(NNConv, self).__init__(conv3x3.in_channels,
+        super(NearestConv, self).__init__(conv3x3.in_channels,
                                      conv3x3.out_channels,
                                      kernel_size=4,
                                      stride=2,
